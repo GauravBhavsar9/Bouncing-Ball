@@ -1,0 +1,144 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#container{
+    position: absolute;
+    width: 1000px;
+    height: 330px;
+    border: 2px solid grey;
+    margin-left: 250px;
+    margin-top: 200px;
+   
+}
+#container #ball{
+    position: absolute;
+    height: 45px;
+    width: 35px;
+    margin-top: 255px;
+    margin-left: 20px;
+    
+
+}
+#container #ball img{
+  margin-bottom: 0px;
+}
+
+
+#container #wall{
+ 
+    position: absolute;
+   height: 70px;
+   width: 50px;
+   margin-top: 230px;
+   margin-left: 950px;
+
+}
+#container #wall img{
+   
+    height: 70px;
+    width: 50px;
+   
+    
+}
+
+#container #cloud img{
+    width: 1000px;
+   
+}
+
+#container #road {
+   margin-top: 240px;
+   display: none;
+}
+
+
+#container #road img{
+    height: 30px;
+   
+    position: absolute;
+    left: 0;
+    animation: none;
+    width: 1000px;
+}
+
+/* .cloudActive{
+    animation: cloudAnimate 1s linear infinite;
+} */
+@keyframes cloudAnimate {
+    0% {
+        left: -2000px;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+@keyframes roadAnimate {
+    0% {
+        right: 0;
+    }
+
+    100% {
+        right: -800px;
+    }
+}
+
+.wallActive {
+    animation: wallAnimate 1.5s linear infinite;
+}
+
+@keyframes wallAnimate {
+    0% {
+        right: 8%;
+    }
+
+    100% {
+        right: 97%;
+    }
+}
+
+.bounce{
+    animation: bounceBall 0.5s linear;
+   
+}
+
+@keyframes bounceBall{
+    /* 0%{
+        bottom: 100px;
+    }
+  
+    60%{
+        bottom: 145px;
+    }
+    100%{
+        bottom: 150px;
+    } */
+
+    0%,
+    100% {
+        bottom: 70px;
+    }
+
+    45%,
+    55% {
+        bottom: 150px;
+    }
+ 
+ 
+}
+
+
+#gameOver{
+    background-color: rgb(177, 192, 188);
+    font-size: 100px;
+    text-align: center;
+    opacity: 0.65;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+#gameOver p{
+    font-size: 30px;
+    opacity: 1;
+    text-decoration: none;
+}
